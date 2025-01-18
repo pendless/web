@@ -7,7 +7,6 @@ import {
 	IconApple,
 	IconArrowUpRight,
 	IconBrandGithub,
-	IconBrandJustd,
 	IconChevronDown,
 	IconColors,
 	IconColorSwatch,
@@ -27,7 +26,7 @@ export function AppNavbar({ children, ...props }: React.ComponentProps<typeof Na
 		<Navbar isSticky isOpen={isOpen} onOpenChange={setIsOpen} {...props}>
 			<Navbar.Nav>
 				<Navbar.Logo className="text-fg" href="/">
-					<IconBrandJustd />
+					 
 				</Navbar.Logo>
 				<Navbar.Section>
 					<Navbar.Item isCurrent={pathname === "/"} href="/">
@@ -54,7 +53,7 @@ export function AppNavbar({ children, ...props }: React.ComponentProps<typeof Na
 								<IconArrowUpRight className="ml-auto" />
 							</Menu.Item>
 							<Menu.Item target="_blank" href="https://getjustd.com/icons">
-								<IconBrandJustd />
+								 
 								Icons
 								<IconArrowUpRight className="ml-auto" />
 							</Menu.Item>
@@ -88,7 +87,7 @@ export function AppNavbar({ children, ...props }: React.ComponentProps<typeof Na
 							target="_blank"
 							href="https://justd.co"
 						>
-							<IconBrandJustd />
+							 
 						</Link>
 						<Navbar.Item
 							className={buttonStyles({ appearance: "outline", size: "small" })}
@@ -119,7 +118,7 @@ export function AppNavbar({ children, ...props }: React.ComponentProps<typeof Na
 							className={buttonStyles({ appearance: "outline", size: "square-petite" })}
 							href="https://getjustd.com"
 						>
-							<IconBrandJustd />
+							 
 						</Link>
 						<Navbar.Item
 							className={buttonStyles({ appearance: "outline", size: "small" })}

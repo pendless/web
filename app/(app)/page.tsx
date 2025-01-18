@@ -1,15 +1,12 @@
-import { Header } from "@/components/header"
-
-import { Resources } from "./resources"
-
 export default function Home() {
 	return (
 		<div className="py-6">
-			<Header
-				title="Justd Starter Kit"
-				description="Next.js 15 Starter Kit with Tailwind CSS, TypeScript, React, React Aria Components, Justd Components, Framer Motion, and more."
-			/>
-			<Resources />
+			<div className="text-center">
+				<h1 className="text-6xl font-black">...less</h1>
+				<button className="mt-4 px-6 py-2 bg-white bg-opacity-30 backdrop-blur-md text-black font-medium rounded transition ease-in-out duration-300">
+					go pendless ->
+				</button>
+			</div>
 		</div>
 	)
 }
