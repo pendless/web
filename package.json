@@ -1,16 +1,44 @@
 {
-  "name": "pendless-web",
-  "version": "1.0.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
-  },
-  "dependencies": {
-    "next": "latest",
-    "react": "latest",
-    "react-dom": "latest",
-    "tailwindcss": "^3.4.17"
-  }
+	"name": "next-js",
+	"version": "1.0.0",
+	"private": true,
+	"repository": "https://github.com/justdlabs/next",
+	"scripts": {
+		"dev": "next dev --turbopack",
+		"build": "next build",
+		"start": "next start",
+		"lint": "biome lint --fix",
+		"format": "bun run lint && biome format --write",
+		"pages:build": "npx @cloudflare/next-on-pages",
+		"preview": "npm run pages:build && wrangler pages dev",
+		"deploy": "npm run pages:build && wrangler pages deploy"
+	},
+	"dependencies": {
+		"@types/react": "^19.0.2",
+		"@types/react-dom": "^19.0.2",
+		"cmdk": "^1.0.4",
+		"embla-carousel-react": "^8.5.1",
+		"input-otp": "^1.4.1",
+		"justd-icons": "^1.10.8",
+		"motion": "^11.15.0",
+		"next": "^15.1.2",
+		"next-themes": "^0.4.4",
+		"react": "^19.0.0",
+		"react-aria-components": "^1.5.0",
+		"react-dom": "^19.0.0",
+		"sonner": "^1.7.1",
+		"tailwind-merge": "^2.6.0",
+		"tailwindcss-animate": "^1.0.7",
+		"wrangler": "^3.103.2"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^1.9.4",
+		"@cloudflare/next-on-pages": "^1.13.7",
+		"@tailwindcss/postcss": "^4.0.0-beta.8",
+		"@types/node": "^22.10.2",
+		"postcss": "^8.4.49",
+		"tailwind-variants": "^0.3.0",
+		"tailwindcss": "^4.0.0-beta.8",
+		"typescript": "^5.7.2"
+	}
 }
