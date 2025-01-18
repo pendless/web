@@ -28,7 +28,8 @@
 		"react-dom": "^19.0.0",
 		"sonner": "^1.7.1",
 		"tailwind-merge": "^2.6.0",
-		"tailwindcss-animate": "^1.0.7"
+		"tailwindcss-animate": "^1.0.7",
+		"wrangler": "^3.103.2"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "^1.9.4",
