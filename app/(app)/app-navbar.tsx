@@ -77,7 +77,7 @@ export function AppNavbar({ children, ...props }: React.ComponentProps<typeof Na
 							aria-label="Goto GitHub Repository"
 							className={buttonStyles({ appearance: "outline", size: "square-petite" })}
 							target="_blank"
-							href="https://github.com/justdlabs/next.js"
+							href="https://github.com/pendless"
 						>
 							<IconBrandGithub />
 						</Link>
@@ -109,7 +109,7 @@ export function AppNavbar({ children, ...props }: React.ComponentProps<typeof Na
 						<Link
 							aria-label="Goto GitHub Repository"
 							className={buttonStyles({ appearance: "outline", size: "square-petite" })}
-							href="https://github.com/justdlabs/next.js"
+							href="https://github.com/pendless"
 						>
 							<IconBrandGithub />
 						</Link>

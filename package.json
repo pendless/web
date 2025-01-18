@@ -2,13 +2,12 @@
 	"name": "next-js",
 	"version": "1.0.0",
 	"private": true,
-	"repository": "https://github.com/justdlabs/next",
+	"repository": "https://github.com/pendless/web",
 	"scripts": {
 		"dev": "next dev --turbopack",
 		"build": "next build",
 		"start": "next start",
 		"lint": "biome lint --fix",
-		"format": "bun run lint && biome format --write",
 		"pages:build": "npx @cloudflare/next-on-pages",
 		"preview": "npm run pages:build && wrangler pages dev",
 		"deploy": "npm run pages:build && wrangler pages deploy"
