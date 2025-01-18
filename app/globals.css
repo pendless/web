@@ -75,7 +75,7 @@
 
 @layer base {
 	:root {
-		--bg: oklch(1 0 0);
+		--bg: #e4e2dd;
 		--fg: oklch(0.141 0.005 285.823);
 
 		--primary: oklch(0.546 0.245 262.881);
@@ -129,11 +129,11 @@
 	}
 
 	.dark {
-		--bg: oklch(0.141 0.005 285.823);
+		--bg: #545454;
 		--fg: oklch(0.985 0 0);
 
 		--primary: oklch(0.546 0.245 262.881);
-		--primary-fg: oklch(1 0 0);
+			--primary-fg: oklch(1 0 0);
 
 		--secondary: oklch(0.234 0.006 286.033);
 		--secondary-fg: oklch(0.985 0 0);
@@ -183,10 +183,12 @@
   
 	h1 {
 	  font-family: 'Archivo Black', sans-serif;
+	  font-size: 8rem;
 	  transition: all 0.3s ease;
 	}
   
 	button {
 	  font-family: 'Outfit', sans-serif;
 	  transition: all 0.3s ease;
+	  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 	}
