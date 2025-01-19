@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
 html {
   min-width: 360px;
   scroll-behavior: smooth;
@@ -31,6 +31,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 ::selection {
-  background-color: #f81ce5;
-  color: #fefefe;
+  background-color: #545454;
+  color: #e4e2dd;
 }
