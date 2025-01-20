@@ -86,102 +86,102 @@ export default function Home() {
               <div className="text">pending...</div>
             </div>
             <style>{`
-  @keyframes blinkCursor {
-  50% {
-    border-right-color: transparent;
-  }
-}
+              @keyframes blinkCursor {
+              50% {
+                border-right-color: transparent;
+              }
+            }
 
-@keyframes typeAndDelete {
-  0%,
-  10% {
-    width: 0;
-  }
-  45%,
-  80% {
-    width: 6.2em;
-  } /* adjust width based on content */
-  100% {
-    width: 6.2;
-  }
-}
+            @keyframes typeAndDelete {
+              0%,
+              10% {
+                width: 0;
+              }
+              45%,
+              80% {
+                width: 6.2em;
+              } /* adjust width based on content */
+              100% {
+                width: 6.2;
+              }
+            }
 
-  .terminal-loader {
-    display: block;
-    margin: 0 auto; /* Center horizontally */
-    background-color: #1a1a1a;
-    color: #0f0;
-    font-family: "Courier New", Courier, monospace;
-    font-size: 1em;
-    padding: 1.5em 1em;
-    width: 12em;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    border-radius: 4px;
-    position: relative;
-    overflow: hidden;
-    box-sizing: border-box;
-    /* Center vertically if parent has height */
-    position: relative;
-    transform: translateY(50%);
-  }
+              .terminal-loader {
+                display: block;
+                margin: 0 auto; /* Center horizontally */
+                background-color: #1a1a1a;
+                color: #0f0;
+                font-family: "Courier New", Courier, monospace;
+                font-size: 1em;
+                padding: 1.5em 1em;
+                width: 12em;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                border-radius: 4px;
+                position: relative;
+                overflow: hidden;
+                box-sizing: border-box;
+                /* Center vertically if parent has height */
+                position: relative;
+                transform: translateY(50%);
+              }
 
-.terminal-header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 1.5em;
-  background-color: #333;
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-  padding: 0 0.4em;
-  box-sizing: border-box;
-}
+            .terminal-header {
+              position: absolute;
+              top: 0;
+              left: 0;
+              right: 0;
+              height: 1.5em;
+              background-color: #333;
+              border-top-left-radius: 4px;
+              border-top-right-radius: 4px;
+              padding: 0 0.4em;
+              box-sizing: border-box;
+            }
 
-.terminal-controls {
-  float: right;
-}
+            .terminal-controls {
+              float: right;
+            }
 
-.control {
-  display: inline-block;
-  width: 0.6em;
-  height: 0.6em;
-  margin-left: 0.4em;
-  border-radius: 50%;
-  background-color: #777;
-}
+            .control {
+              display: inline-block;
+              width: 0.6em;
+              height: 0.6em;
+              margin-left: 0.4em;
+              border-radius: 50%;
+              background-color: #777;
+            }
 
-.control.close {
-  background-color: #e33;
-}
+            .control.close {
+              background-color: #e33;
+            }
 
-.control.minimize {
-  background-color: #ee0;
-}
+            .control.minimize {
+              background-color: #ee0;
+            }
 
-.control.maximize {
-  background-color: #0b0;
-}
+            .control.maximize {
+              background-color: #0b0;
+            }
 
-.terminal-title {
-  float: left;
-  line-height: 1.5em;
-  color: #eee;
-}
+            .terminal-title {
+              float: left;
+              line-height: 1.5em;
+              color: #eee;
+            }
 
-.text {
-  display: inline-block;
-  white-space: nowrap;
-  overflow: hidden;
-  border-right: 0.2em solid green; /* Cursor */
-  animation:
-    typeAndDelete 4s steps(11) infinite,
-    blinkCursor 0.5s step-end infinite alternate;
-  margin-top: 1.5em;
-}
-`}</style>
+            .text {
+              display: inline-block;
+              white-space: nowrap;
+              overflow: hidden;
+              border-right: 0.2em solid green; /* Cursor */
+              animation:
+                typeAndDelete 4s steps(11) infinite,
+                blinkCursor 0.5s step-end infinite alternate;
+              margin-top: 1.5em;
+            }
+            `}</style>
           </div>
-          <div className="relative w-full py-10 mx-auto text-center md:py-32 md:my-12 md:w-10/12">
+          {/* <div className="relative w-full py-10 mx-auto text-center md:py-32 md:my-12 md:w-10/12">
             <div className="relative z-10">
               <a
                 target="_blank"
@@ -198,14 +198,14 @@ export default function Home() {
             <p className="z-10 my-8 text-sm font-medium text-gray-500">
               Maybe we&apos;re bringing brightness too?
             </p>
-          </div>
+          </div> */}
         </div>
-        {/* <div
+        <div
           style={{ backgroundImage: "url(/images/blur.png)" }}
-          className="absolute inset-0 w-full h-full bg-bottom bg-no-repeat bg-cover -z-1"
-        /> */}
+          className="absolute inset-0 w-full h-full bg-bottom bg-no-repeat bg-cover z-50 pointer-events-none transform -translate-y-24"
+        />
       </section>
-      <Sponsors />
+      {/* <Sponsors /> */}
       <Features />
       <Pricing />
       <Footer />
